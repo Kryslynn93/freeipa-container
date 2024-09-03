@@ -130,7 +130,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/actions/docker-cgroups-ubuntu-22
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: freeipa-server-${{ matrix.os }}
       - name: Decrypt artifacts that were encrypted after build
@@ -168,7 +168,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: freeipa-server-${{ matrix.os }}
       - name: Decrypt artifacts that were encrypted after build
@@ -199,7 +199,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: freeipa-server-${{ matrix.os }}
       - name: Decrypt artifacts that were encrypted after build
@@ -227,7 +227,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: freeipa-server-${{ matrix.os }}
       - name: Decrypt artifacts that were encrypted after build
@@ -272,7 +272,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/actions/docker-cgroups-ubuntu-22
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: freeipa-server-${{ matrix.os }}
       - name: Decrypt artifacts that were encrypted after build
@@ -301,7 +301,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: freeipa-server-${{ matrix.os }}
       - name: Decrypt artifacts that were encrypted after build
@@ -332,7 +332,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: freeipa-server-${{ matrix.os }}
       - name: Decrypt artifacts that were encrypted after build
@@ -360,7 +360,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/actions/docker-cgroups-ubuntu-22
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: freeipa-server-${{ matrix.os }}
       - name: Decrypt artifacts that were encrypted after build
@@ -395,7 +395,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: freeipa-server-${{ matrix.os }}
       - name: Decrypt artifacts that were encrypted after build
@@ -420,7 +420,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: freeipa-server-${{ matrix.os }}
       - name: Decrypt artifacts that were encrypted after build
@@ -455,7 +455,7 @@ jobs:
         os: [ fedora-rawhide, fedora-38, fedora-37, centos-9-stream, centos-8-stream, rocky-9, rocky-8, almalinux-9, almalinux-8, centos-7 ]
     timeout-minutes: 30
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: freeipa-server-${{ matrix.os }}
       - name: Prepare authentication file
